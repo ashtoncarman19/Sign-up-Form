@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    flex-flow:row nowrap;
+    height: 100vh;
+    margin: 0;
+}
+
+.left-half{
+    width: 40%;
+    background-image: url("left-background.jpg");
+    background-size: contain;
+    background-size: cover;
+    background-position: center;
+}   
+
+    .logo{
+        font-family:sans-serif;
+        font-size: 32px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        width: auto;
+        margin-top: 25%;
+    }
+
+    img{
+        height: 175px;
+    }
+
+.form-container{
+    width: 60%;
+    background: linear-gradient(rgb(255, 208, 121), rgb(199, 129, 0));
+}
