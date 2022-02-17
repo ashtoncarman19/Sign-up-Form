@@ -8,12 +8,11 @@
     <title>Fake Pet Sign-Up Form</title>
 </head>
 <body>
-    <form action="example.com/path" method="post"></form>
     <div class="left-half">
         <div class="logo"><img src="pet-logo.png" alt="Pet-logo"> <strong>BogGat</strong></div>
     </div>
 
-    <div class="form-container">
+    <div class="right-container">
         <div class="greeting">
           <p>This is not a real online service! 
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, commodi!
@@ -22,33 +21,41 @@
             <p>You <em>know</em> you want to...</p>
         </div>
 
-        <fieldset>
+    <div class="form-container">
+        <form action="" method="get">
+        <fieldset class="left-form">
 
-            <legend>Sign up Now! Or else</legend>
+            <label for="firstname">First Name</label>
+            <input type="text" id="firstname" name="firstname" 
+            required>
 
-            <label for="First Name"></label>
-            <input type="text" id="firstname" name="firstname" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" >
 
-            <label for="Last Name"></label>
-            <input type="text" id="lastname" name="lastname" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="phone_number">Phone Number:</label>
-            <input type="tel" id="phone_number" name="phone_number" required>
-
-            <label for="Password">Password</label>
-            <input type="password" id="Password" name ="Password" required> 
-
-            <label for="Confirm Password">Confirm Password</label>
-            <input type="password" required> 
-    
+            <label for="password">Password</label>
+            <input type="password" id="Password" name ="Password" > 
+            
         </fieldset>
 
-        <button type="submit">Create Account</button>
+        <fieldset class="right-form">
 
-        <p>Already have an account? <a>Log in</a></p>
+            <label for="lastname">Last Name</label>
+            <input type="text" id="lastname" name="lastname" >
+
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" id="phone_number" name="phone_number" >
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" > 
+            
+        </fieldset>
+    </div>
+        <button type="submit">Create Account</button>
+</form>
+
+        <p class="login">Already have an account? 
+            <a href="https://www.google.com/search?q=animal+shelter+near+me&oq=animal+shelter+near+me&aqs=chrome..69i57j0i402l2j0i512l7.4737j0j7&sourceid=chrome&ie=UTF-8">
+            Log in</a></p>
     </div>
 
     <script src="script.js"></script>
