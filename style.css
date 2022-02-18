@@ -55,6 +55,7 @@ body{
 
     fieldset{
         display: flex;
+        flex: 1 1 auto;
         flex-flow: column wrap;
         padding-top: 20px;
         padding-bottom: 20px;
